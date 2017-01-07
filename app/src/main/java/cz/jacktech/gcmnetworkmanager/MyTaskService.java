@@ -65,7 +65,7 @@ public class MyTaskService extends GcmTaskService {
                 //tag that is unique to this task (can be used to cancel task)
                 .setTag(GCM_ONEOFF_TAG)
                 //executed between 0 - 10s from now
-                .setExecutionWindow(10, 10)
+                .setExecutionWindow(10, 15)
                 //set required network state, this line is optional
                 .setRequiredNetwork(Task.NETWORK_STATE_ANY)
                 //request that charging must be connected, this line is optional
